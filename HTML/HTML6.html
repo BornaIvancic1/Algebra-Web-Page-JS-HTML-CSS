@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldSkills natjecanje - Kazan 2019.</title>
+<link rel="stylesheet" href="/CSS/CSS6.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,700,1,200" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <script src="fancybox-init.js"></script>
+<script defer src="/JAVASCRIPT/JS6.js"></script>
+<script  defer src="/JAVASCRIPT/JS1.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top ">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item" id="loginNavItem">
+            <a class="nav-link" href="/HTML/HTML2.html"><i class="material-icons" style="font-size:20px;color:red;">account_circle</i><div class="navtext" id="navUsername">Prijavi se</div></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html"><i class="material-icons" style="font-size:20px;color:rgb(36, 207, 27);">web</i><div class="navtext">Početna</div></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/HTML/HTML3.html"><i class="material-icons" style="font-size:20px;color:rgb(97, 118, 227);">accessibility</i><div class="navtext">O nama</div></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/HTML/HTML4.html"><i class="material-icons" style="font-size:20px;color:rgb(232, 93, 137);">web</i><div class="navtext">Novosti</div></a>
+          </li>
+          <li class="nav-item">
+            <button data-modal-target="#modalish" class="kontakt nav-link"><i class="material-icons" style="font-size:20px;color:rgb(239, 243, 58);">supervised_user_circle</i><div class="navtext">Kontakt</div></button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+ 
+  </header>
+  <div class="modalish" id="modalish">
+    <div class="modalish-header">
+      <div class="title"><span class="material-symbols-outlined">
+        mail
+        </span> Kontaktirajte nas</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modalish-body">
+      <input type="text" id="name" placeholder="Puno ime" required="true"> 
+      <input type="email" id="email" placeholder="E-mail" required="true">
+     <select name=s1 >
+<option value="Niska">Niska</option>
+<option value="Visoka">Visoka</option>
+</select>
+<textarea id="poruka" placeholder="Kako vam možemo pomoči?" cols="4" rows="4" required="true"></textarea>
+<button type="submit" id="send-button">Pošalji</button>
+<input type="checkbox" id="obavijesti" name="obavijesti">
+<label for="obavijesti">Želim primati obavijesti</label>
+
+</div>
+</div>
+  <div id="overlay"></div>
+  <div class="container-fluid p-0">
+    <div class="row">
+        <div class="col-12">
+            <div class="student d-flex justify-content-center">
+                <h1 class="student1 align-self-center text-center text-md-left">Student Josip Stanešić 12. je sistemaš svijeta i dobitnik medalje izvrsnosti.</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+  
+  
+    
+    <div class="row">
+      <div class="col-12">
+        <div class="text">
+          <p class="Naslovi">WorldSkills natjecanje - Kazan 2019.</p> <!-- Naslov novosti -->
+          <hr class="my-4 bg-warning">
+          <p class="plain  text-sm text-md text-lg"> Nakon godinu dana priprema za natjecanje WorldSkills
+            Kazan 2019 na kojem je sudjelovalo 1300 natjecatelja iz
+            cijelog svijeta, trud se itekako isplatio. Josip,
+            student 3. godine preddiplomskog studija sistemskog
+            inženjerstva osvojio je 12. mjesto u vještini IT
+            Networks and System Administration te osvojio medalju
+            izvrsnosti! Čestitke Josipu ali i njegovim/našim
+            mentorima koji su ga pripremali za ovo natjecanje –
+            voditelju studija sistemskog inženjerstva Silviju
+            Papiću, voditelju katedre za operacijske sustave –
+            Vedranu Dakiću i asistentu na studiju sistemskog
+            inženjerstva – Jasminu Redžepagiću. Čestitke i našem
+            studentu 3.godine preddiplomskog studija programskog
+            inženjerstva Josipu Horvatu i mentoru voditelju katedre
+            za programsko inženjerstvo - Goranu Đambiću na osvojenom
+            16.mjestu u vještini IT Software Solutions for Business.</p><!-- Opis novosti -->
+        </div>
+      </div>
+    </div>
+    
+    <div class="row justify-content-center"><!-- Slike novosti na koje ako stisnemo dobijemo okvir -->
+      <div class="col-12 col-md-5">
+        <div id="flexslike">
+          <div id="flexslika">
+            <a href="/img/galerija1.jpg" data-fancybox="mygallery"><img src="/img/galerija1.jpg" class="slikeflex" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-5">
+        <div id="flexslike">
+          <div id="flexslika">
+            <a href="/img/galerija2.jpg" data-fancybox="mygallery"><img src="/img/galerija2.jpg" class="slikeflex" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-12">
+        <div class="embed-responsive embed-responsive-16by9 embed-responsive-sm d-flex justify-content-center">
+          <video class="embed-responsive-item" src="/video/worldskills.mp4" controls style="max-width: 90%;"></video>
+        </div><!-- Video novosti -->
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+  </div>
+  
+  <div class="zag"> 
+  
+    <H1 class="textprekoslike">BUDI IZVRSTAN U ONOME ŠTA VOLIŠ </H1> 
+<h1 class="textispodtexta">ZAISKRI</h1>
+
+   
+  </div>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

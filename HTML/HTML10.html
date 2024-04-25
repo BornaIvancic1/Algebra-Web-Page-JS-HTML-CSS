@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registracija</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="/CSS/CSS2.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,700,1,200" />
+<script  defer src="/JAVASCRIPT/JS1.js"></script>
+<script defer src="/JAVASCRIPT/JS10.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top ">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item" id="loginNavItem">
+            <a class="nav-link" href="/HTML/HTML2.html"><i class="material-icons" style="font-size:20px;color:red;">account_circle</i><div class="navtext" id="navUsername">Prijavi se</div></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html"><i class="material-icons" style="font-size:20px;color:rgb(36, 207, 27);">web</i><div class="navtext">Početna</div></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/HTML/HTML3.html"><i class="material-icons" style="font-size:20px;color:rgb(97, 118, 227);">accessibility</i><div class="navtext">O nama</div></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/HTML/HTML4.html"><i class="material-icons" style="font-size:20px;color:rgb(232, 93, 137);">web</i><div class="navtext">Novosti</div></a>
+          </li>
+          <li class="nav-item">
+            <button data-modal-target="#modalish" class="kontakt nav-link"><i class="material-icons" style="font-size:20px;color:rgb(239, 243, 58);">supervised_user_circle</i><div class="navtext">Kontakt</div></button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+ 
+  </header>
+  <div class="modalish" id="modalish">
+    <div class="modalish-header">
+      <div class="title"><span class="material-symbols-outlined">
+        mail
+        </span> Kontaktirajte nas</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="modalish-body">
+      <input type="text" id="name" placeholder="Puno ime" required="true"> 
+      <input type="email" id="email" placeholder="E-mail" required="true">
+     <select name=s1 >
+<option value="Niska">Niska</option>
+<option value="Visoka">Visoka</option>
+</select>
+<textarea id="poruka" placeholder="Kako vam možemo pomoči?" cols="4" rows="4" required="true"></textarea>
+<button type="submit" id="send-button">Pošalji</button>
+<input type="checkbox" id="obavijesti" name="obavijesti">
+<label for="obavijesti">Želim primati obavijesti</label>
+
+</div>
+</div>
+  <div id="overlay"></div>
+  <div class="d-flex justify-content-center">
+    <form class="prijava text-center" onsubmit="event.preventDefault(); registerUser(email.value, password.value);">
+      <h1 class="prijava1">REGISTRACIJA KORISNIKA</h1>
+      <div class="form-group">
+        <label for="username" class="prijava2">Korisničko ime</label>
+        <input type="email" name="email" id="email" class="form-control prijava3" required>
+      </div>
+      <div class="form-group">
+        <label for="password" class="prijava2">Lozinka</label>
+        <input type="password" id="password" name="password" class="form-control prijava3" required>
+      </div>
+      <button type="submit" class="btn btn-primary custom-bg">Registriraj se</button>
+    </form>
+  </div><!--Forma za registraciju korisnika -->
+  
+
+
+
+
+
+<p class="racun"><a href="/HTML/HTML2.HTML" class="no-underline"><span class="racuna">odustani</span></a></p>
+<!-- Ako imamo račun možemo odustati kada stisnemo na odustani što nas vodi na stranicu za login-->
+  <div class="zag"> 
+  
+    <H1 class="textprekoslike">BUDI IZVRSTAN U ONOME ŠTA VOLIŠ </H1> 
+    <h1 class="textispodtexta">ZAISKRI</h1>
+
+   
+  </div>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

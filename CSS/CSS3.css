@@ -1,0 +1,485 @@
+*{
+  padding: 0 ;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+ padding-right: 0.5cm;
+ padding-left: 0.5cm;
+ color: white;
+ text-decoration: none;
+}
+.navbar-nav .nav-link {
+  color: white !important;
+  background-color: #000000;
+  padding-top: 15px;
+  padding-bottom: 15px;
+ 
+}
+.navtext{
+  display: inline-block;
+  font-size: 18px;
+}
+.nav-item{
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+.navbar {
+  z-index: 1000000000000;
+}
+.navbar-toggler {
+  border: none;
+  outline: none;
+  background-color: transparent;
+margin-left: 20px;
+}
+
+.navbar-toggler-icon {
+
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+}
+
+
+.navbar-toggler:hover .navbar-toggler-icon {
+  transform: scale(1.1);
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.kontakt{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  border: 0;
+}
+
+
+nav
+    {  top: 0px;
+      width: 100%;
+     position: fixed;
+     z-index: 1000000;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: black !important;
+  gap: 2cm;
+    padding-top: 0.6cm;
+padding-bottom: 0.6cm;
+
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+ }
+ .nav-right .nav-link{color:#E27526 !important;}
+
+  
+
+
+
+ .zag{
+  text-align: center;
+  margin: 0 auto;
+  max-width: 2000px; 
+  padding: 0 20px;
+ position: relative;
+height: 15cm;
+
+   padding-bottom: 0;
+  margin-bottom: 0;
+  background-image: url(/img/zaiskri-bg.jpg);
+background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.textprekoslike{
+  padding-top: 7cm;
+  color: white;
+margin-left: 10%;
+margin-right: 10%;
+}
+.textispodtexta{
+    padding-top: 1cm;
+    color:#E27526;
+}
+
+.slikakampusa{
+  width: 100% ;
+  height: auto ;
+    z-index: -1;
+    overflow: hidden;
+    position: relative;
+  display: block;
+  margin-top: -7cm;
+  opacity: 0;
+  transform: translateY(-100%);
+  animation: appear 1s forwards;
+}
+
+
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.namao{
+background-color: white;
+
+text-align: center;
+
+}
+.textva{
+font-family: SimSun-ExtB;
+text-align: left;
+max-width: 90%;
+margin-left: 5%;  
+margin-right: 5%;  
+}
+.Naševrijednosti{
+  text-align: center;
+  padding-top: 2cm;
+padding-bottom:  2cm;
+color: red  ; }
+
+.karta  {
+align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
+max-width: 90%;
+}
+
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.modalish {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 100000000000;
+  background-color: white;
+  width: 500px;
+  max-width: 80%;
+
+  margin-right: 10%;
+}
+
+
+.modalish.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modalish-header {
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modalish-header .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.modalish-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: black;
+}
+
+.modalish-body {
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+}
+.modalish-body input,form, textarea,select{
+border: 0;
+margin: 10px 0;
+padding: 20px;
+outline: none;
+font-size: 16px;
+}
+.modalish-body select,option{
+  color: black;
+}
+.modalish-body button{
+  padding: 15px;
+  background-color: rgb(97, 97, 255);
+  color: white;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+border-radius: 30px;
+}
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .8);
+  pointer-events: none;
+  z-index: 1000000000;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.my-4{
+  height: 2.5px !important;
+  width: 30%;
+  margin: 0 auto;
+color: #E27526;
+  border: none;
+
+  opacity: 0;
+  transform: translateY(100%);
+  animation: appear1 1s forwards;
+}
+
+.Onama{
+padding-top: 30px;
+opacity: 0;
+transform: translateY(100%);
+animation: appear1 1s forwards;
+}
+
+@keyframes appear1 {
+0% {
+opacity: 0;
+transform: translateY(100%);
+}
+100% {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+.kocka1{
+  color: rgb(73, 73, 73);
+padding-top: 50px;
+  display: flex;
+ width: 80%;
+ 
+flex-direction: row;
+margin-left: auto;
+margin-right: auto;
+}
+.kocka1M{
+
+border-style: groove;
+margin-left: 10px;
+  margin-right: 10px;
+  flex: 1;
+}
+.kocka1MM{
+
+  
+  margin-left: 10px;
+    margin-right: 10px;
+    flex: 1;
+  }
+#kockice{
+  padding-bottom: 20px;
+  text-align: left;
+ margin-right: 10px;
+ margin-left: 20px;
+ padding-top: 7.5px;
+}
+#kockiceN{
+text-transform: uppercase;
+
+color: black;
+  font-size: 20PX;
+  padding-left: 10px;
+  padding-right: 30px;
+  text-align: left;
+ font-weight: 500;
+}
+#kockiceN2{
+  text-transform: uppercase;
+  
+  color: black;
+    font-size: 18PX;
+    padding-left: 10px;
+    padding-right: 30px;
+    text-align: left;
+   font-weight: 500;
+  }
+.slikkk{
+  height: 65px;
+}
+
+#location{
+  padding-top: 20px;
+  text-align: left;
+  font-size: 25px;
+font-weight: bold;
+color: black;
+padding-bottom: 10px;
+margin-right: 10px;
+margin-left: 10px;
+}
+
+.nav-right {
+  animation: appear-from-right 0.5s !important;
+}
+
+@keyframes appear-from-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+#mapapp{
+  background-image: url(/img/kakoDoNas.jpg);
+  background-attachment: fixed;
+}
+.kocka1M{
+  background-color: white;
+}
+.underl{
+  padding-top: 10px;
+
+  border-bottom: 2px solid rgb(240, 240, 240);
+}
+i{
+
+  color: blue;
+}
+.karta{
+
+
+  display: block;
+  margin-top: 1.5cm;
+padding-bottom: 1cm;
+text-align: center;
+}
+.godine{
+  color: rgb(92, 92, 255);
+
+
+}
+.textva {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out 0.5s; 
+}
+
+.textva.on-screen {
+  opacity: 1;
+}
+.material-icons, .material-symbols-outlined{
+
+  vertical-align:sub!important;
+margin-left: 5px;
+margin-right: 5px;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  top: 29px;
+right: 38px;
+}
+
+label[for="obavijesti"] {
+  display: inline-block;
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  text-align: left;
+  font-size: 16px;
+padding-left: 20px;
+
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c21b66;
+  border-radius: 6px;
+  border: 3px solid #000000;
+}
+
+scrollbar {
+  width: 12px;
+}
+
+scrollbar-thumb {
+  background-color: #c21b66;
+  border-radius: 6px;
+  border: 3px solid #000000;
+}
+
+scrollbar-track {
+  background: #000000;
+}
+.student{
+  padding-top: 3.5cm;
+    background-image: url("/img/kampus-iz-zraka-min-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 7.5cm;
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: appear 1s forwards;
+}
+@media (max-width: 1400px) {
+  .navbar-nav.nav-right.align-items-center {
+    display: none;
+  }
+.kocka1{
+  flex-direction: column;
+  gap: 30px;
+}
+}
+.navtext:hover {
+  color: #c21b66;
+
+}
